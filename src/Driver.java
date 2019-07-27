@@ -1,3 +1,9 @@
+/**
+ * test driver for a greeting program
+ *
+ * @author Leo Gurrola
+ */
+
 public class Driver {
     public static void main (String[] args) {
         /*
@@ -6,10 +12,9 @@ public class Driver {
         }
          */
 
-        Greeter guy = new Greeter();
+        Greeter guy = new Greeter(); // guy does a randomized greeting
         Greeter gal = new Greeter("Howdy");
 
-        System.out.println(guy.work());
-        System.out.println(gal.work());
+        System.out.println("Guy says: " + guy.work() + "\nGal says: " + gal.work());
     }
 }

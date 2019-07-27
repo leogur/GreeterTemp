@@ -1,3 +1,8 @@
+/**
+ * ENUM class that holds a pool of greetings
+ * @author Leo Gurrola
+ */
+
 import java.util.Random;
 
 public enum Greeting {
@@ -8,6 +13,10 @@ public enum Greeting {
 
     private String greeting;
 
+    /**
+     * ENUMs hold their own strings
+     * @param s
+     */
     Greeting(String s) {
         this.greeting = s;
     }
@@ -16,6 +25,10 @@ public enum Greeting {
         return greeting;
     }
 
+    /**
+     * gets randomized Greeting
+     * @return
+     */
     public static Greeting getRandGreeting() {
         Random rand = new Random();
         return values()[rand.nextInt(values().length)];
